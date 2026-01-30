@@ -1,0 +1,48 @@
+1. Coffee Shop Ordering System (Basic)
+Scenario:
+You are developing a simple ordering system for a new coffee shop. The system needs to calculate the total bill for a customer's order and apply a discount if applicable. 
+Task:
+Create a Python program that performs the following actions:
+Display a menu with item names and prices (e.g., Coffee: $3.50, Muffin: $2.00, Bagel: $4.00).
+Prompt the user to select items and quantities.
+Calculate the total cost of the order.
+Apply a 10% discount if the total bill exceeds $20.00.
+Display the final amount payable. 
+OUTPUT : 
+print("                    ORDERING SYSTEM                    ")
+item_name=('coffee','muffin','bagel')
+print(item_name)
+price=("coffee"==35,"muffin"==20,"bagel"==40)
+menu=input("enter the item name :" )
+discount=10
+amount=0
+quantity=2
+total=0
+if(menu=="coffee"):
+    amount=35
+elif(menu=="muffin"):
+    amount=20
+elif(menu=="bagel"):
+    amount=40
+else:
+    print("order cancelled")    
+discount=amount*10/100
+total=amount-discount
+print("your total price money : ",total)
+print("                   THANK YOU FOR THE ORDER               ") 
+
+----------------------------------------------------------------------------------------------------------------------
+2.Scenario: You are processing credit card numbers (e.g., "4532111188885678").
+Task: Write a function that:
+Takes the string as input.
+Returns a "masked" version where all digits except the last 4 are replaced by * (e.g., "************5678").
+Focus: Function definitions, string slicing, and the * repetition operator.
+
+OUTPUT
+i="4532111188885678"
+y="5678"
+s=len(i)
+print(s)
+print("*" * (len(i)-4),y)
+
+--------------------------------------------------------------------------------------------------------------------------
